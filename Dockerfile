@@ -22,4 +22,6 @@ RUN echo 'root:ch@ngem3' | chpasswd
 
 EXPOSE 22 80 8000 443
 
+VOLUME ["/var/www/"]
+
 CMD ["/sbin/init"]
