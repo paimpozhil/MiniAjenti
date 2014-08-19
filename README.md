@@ -35,7 +35,7 @@ Without Data volumes
 
 ```
 docker run -td --name mysql centurylink/mysql
-docker run -td --link mysql:db -p 8000:8000 -p 80:80 -p 443:443 -p 2222:22 -p 21:21 -p 8008:8008 --volumes-from data paimpozhil/miniajenti
+docker run -td --link mysql:db -p 8000:8000 -p 80:80 -p 443:443 -p 2222:22 -p 21:21 -p 8008:8008 paimpozhil/miniajenti
 ```
 
 
@@ -57,11 +57,12 @@ Default logins are root/ch@ngem3
 
 Within the Ajenti Control panel.. you will see under websites-> PHPMYADMIN 
 
-Click it and then disable the Maintenence mode.
+Click it and then disable the Maintenence mode / click Apply changes you are set.
 
 Now visit 
 
-https://[public IP]:8008 and hit enter.. you dont have to do anything else. 
+http://[public IP]:8008 and enter root as username
+
 Mysql is unsecure/ no password by default .
 
 
