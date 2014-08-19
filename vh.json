@@ -1,0 +1,57 @@
+{
+    "websites": [
+        {
+            "maintenance_mode": true,
+            "locations": [
+                {
+                    "custom_conf_override": false,
+                    "path_append_pattern": false,
+                    "pattern": "[^/]\\.php(/|$)",
+                    "custom_conf": "",
+                    "path": "",
+                    "match": "regex",
+                    "backend": {
+                        "params": {
+                            "php_admin_values": "open_basedir = none;",
+                            "php_flags": ""
+                        },
+                        "type": "php-fcgi"
+                    }
+                }
+            ],
+            "custom_conf": "",
+            "ssl_key_path": "",
+            "owner": "root",
+            "ssl_cert_path": "",
+            "custom_conf_toplevel": "",
+            "name": "phpmyadmin",
+            "enabled": true,
+            "extensions": {
+                "ajenti.plugins.vh.processes.ProcessesExtension": {
+                    "processes": []
+                },
+                "ajenti.plugins.vh-vsftpd.vsftpd.VSFTPDExtension": {
+                    "username": "phpmyadmin",
+                    "password": "852003c8-89e6-4fee-9c9d-80c005eacdf7",
+                    "user": null,
+                    "created": true
+                },
+                "ajenti.plugins.vh-mysql.mysql.MySQLExtension": {
+                    "users": [],
+                    "databases": []
+                }
+            },
+            "domains": [],
+            "root": "/usr/share/phpMyAdmin",
+            "ports": [
+                {
+                    "spdy": false,
+                    "ssl": false,
+                    "host": "*",
+                    "port": 8008,
+                    "default": false
+                }
+            ]
+        }
+    ]
+}
