@@ -79,6 +79,10 @@ MiniAjenti is a small part of the same base however it is more developer centric
 
 Data from MiniAjenti can be migrated seamlessly to run inside WhatPanel containers as well if you require hosting this later on production servers.
 
+https://github.com/paimpozhil/WhatPanel
 
+## Need support?
+
+#### http://dockerteam.com
 
 
